@@ -12,9 +12,7 @@
     "url": "git://github.com/germanrcuriel/discord-conimarketcap-bot.git"
   },
   "dependencies": {
-    "async": "^2.4.1",
     "discord.js": "^11.1.0",
-    "lodash": "^4.17.4",
     "request": "^2.81.0"
   }
 }

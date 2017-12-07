@@ -4,9 +4,7 @@ const config = {
     token: '' // Your bot user token
   },
   discord: {
-    channel: 'cryptocurrencies', // Your discord channel
-    prefix: '$',
-    slash: 'coin'
+    channel: 'cryptocurrencies' // Your discord channel
   }
 }
 

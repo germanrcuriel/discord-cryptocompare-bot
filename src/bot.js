@@ -1,4 +1,3 @@
-const _ = require('lodash')
 const Discord = require('discord.js')
 const request = require('request')
 
@@ -65,8 +64,7 @@ class Bot {
 
   replyWithCoinValues (message, ...coins) {
     const fsyms = coins.join(',')
-    const tsyms = 'USD,EUR'
-    this.fetchInfo(fsyms, tsyms, (embeds) => { this.sendMessage(message.channel, embeds) })
+    this.fetchInfo(fsyms, 'USD,EUR', (embeds) => { this.sendMessage(message.channel, embeds) })
   }
 
   replyWithCoinConversions (message, coin, ...conversions) {
@@ -90,7 +88,6 @@ class Bot {
       if (!this.coinData.Data[coin]) return
 
       let embed = new Discord.RichEmbed()
-        //.setThumbnail(`${this.coinData.BaseImageUrl}${this.coinData.Data[coin].ImageUrl}`)
         .setAuthor(`1 ${this.coinData.Data[coin].FullName}`, `${this.coinData.BaseImageUrl}${this.coinData.Data[coin].ImageUrl}`)
         .setURL(`${this.coinData.BaseLinkUrl}${this.coinData.Data[coin].Url}`)
 
