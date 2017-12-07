@@ -1,0 +1,20 @@
+{
+  "name": "discord-cryptocompare-bot",
+  "description": "A Discord bot to get cryptocompare information",
+  "version": "0.0.1",
+  "author": "Germán Robledo <germanrcuriel@gmail.com>",
+  "bin": {
+    "discord-steam-bot": "bin/discord-cryptocompare-bot.js"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/germanrcuriel/discord-conimarketcap-bot.git"
+  },
+  "dependencies": {
+    "async": "^2.4.1",
+    "discord.js": "^11.1.0",
+    "lodash": "^4.17.4",
+    "request": "^2.81.0"
+  }
+}
